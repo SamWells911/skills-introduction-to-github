@@ -1,0 +1,25 @@
+# Simple Chatbot: Ruben's AI Assistant
+
+def chatbot():
+    print("Hi! I'm your AI assistant. Let's chat! (Type 'exit' to quit)")
+    
+    while True:
+        user_input = input("You: ").lower()
+        
+        if user_input == "exit":
+            print("AI: Goodbye! Have a great day!")
+            break
+        elif "hello" in user_input or "hi" in user_input:
+            print("AI: Hello! How can I assist you today?")
+        elif "how are you" in user_input:
+            print("AI: I'm just a program, but I'm here to help! How about you?")
+        elif "your name" in user_input:
+            print("AI: I'm Ruben's AI assistant. What's your name?")
+        elif "weather" in user_input:
+            print("AI: I'm not connected to real-time data yet, but I hope it's sunny!")
+        else:
+            print("AI: Hmm, I’m not sure how to respond to that. Let’s try another topic!")
+
+# Run the chatbot
+if __name__ == "__main__":
+    chatbot()
